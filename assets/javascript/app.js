@@ -1,4 +1,4 @@
-var animalsAr = ['goat','pig','bird','dog'];
+var animalsAr = ['goat','pig','bird','dog', 'jellyfish'];
 
 // render array to button
 function renderArrayToButton(){
@@ -45,7 +45,7 @@ function getGiphyData(e){
     e.preventDefault();
     console.log(this.innerText);
     
-    var queryUrl = 'https://api.giphy.com/v1/gifs/search?api_key=VCtHRNm0rquIRq8e5hKxc3yp5uhoItho&q='+this.innerText+'&rating=g&limit=10';
+    var queryUrl = 'https://api.giphy.com/v1/gifs/search?api_key=VCtHRNm0rquIRq8e5hKxc3yp5uhoItho&q='+this.innerText+'&rating=g&limit=30';
 
     
      
@@ -58,7 +58,7 @@ function getGiphyData(e){
             console.log(json);
 
         for (i in  gifsLink) {
-            $('.results').append("<img id='giffs' src=' "+ gifsLink[i].images.original.url+ " ' style='height:250px; width:250px; '/ >");
+            $('.results').append("<img  src=' "+ gifsLink[i].images.original.url+ " ' style='height:250px; width:250px; '/ >");
             
             
         } 
@@ -67,11 +67,6 @@ function getGiphyData(e){
            
          })
         .catch(function(error) { console.error(error) })
-
-         
-
-   
-    
 
 }
 
