@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     <title>GifAPI</title>
 </head>
 <body>
-    <h1>API Assignment</h1>
+    <h1>GifTastic API Assignment</h1>
     <!--  working movie app unsolved -->
     <!-- add gif with submit click-->
-    <form id="myform">
+    <form id="myform" autocomplete="off">
         <lable name="text">Enter a Gif</label>
         <input id="input-box" type="text" />
         <!-- <button id="add-button" >Add</button> -->
         <input id='add-button' type='submit' value='Add'/>
     </form>
-    
     <div class="results">
-            <ul id="target"> </ul>
+            <ul class="gif" id="target"> </ul>
+            
     </div>
-    <img id="gif" src="" alt="">
+    <!-- <img id="gif" src="" alt="" > -->
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>

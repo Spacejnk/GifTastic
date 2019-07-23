@@ -1,6 +1,8 @@
 body {
     background-color: rgb(116, 124, 126);
+    background-image: url("/assets/image/letters.jpg");
 }
+
 
 ul {
     list-style: none;
