@@ -58,7 +58,7 @@ function getGiphyData(e){
             console.log(json);
 
         for (i in  gifsLink) {
-            $('.results').append("<img  src=' "+ gifsLink[i].images.original.url+ " ' style='height:250px; width:250px; '/ >");
+            $('.results').append("<img id='giffs' src=' "+ gifsLink[i].images.original.url+ " ' style='height:250px; width:250px; '/ >");
             
             
         } 
