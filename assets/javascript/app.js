@@ -59,6 +59,7 @@ function getGiphyData(e){
 
         for (i in  gifsLink) {
             $('.results').append("<img  src=' "+ gifsLink[i].images.original.url+ " ' style='height:250px; width:250px; '/ >");
+            //$(ul > button).addClass('gif-image');
             
             
         } 
@@ -73,7 +74,15 @@ function getGiphyData(e){
 
 
 
-
+            $(document).ready(
+                function() {
+                $('ul > button').each(
+                    function() {
+                    $(this).addClass('my-gif');
+                    }
+                );
+                }
+            );
 
 
 
