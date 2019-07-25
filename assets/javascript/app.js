@@ -58,32 +58,17 @@ function getGiphyData(e){
             console.log(json);
 
         for (i in  gifsLink) {
-            $('.results').append("<img  src=' "+ gifsLink[i].images.original.url+ " ' style='height:250px; width:250px; '/ >");
-            //$(ul > button).addClass('gif-image');
-            
+            $('#target').append("<img class='my-gif' src=' "+ gifsLink[i].images.original.url+ " ' style='height:250px; width:250px; '/ >");
             
         } 
 
+        })
 
-           
-         })
         .catch(function(error) { console.error(error) })
 
 }
 
-
-
-
-            $(document).ready(
-                function() {
-                $('ul > button').each(
-                    function() {
-                    $(this).addClass('my-gif');
-                    }
-                );
-                }
-            );
-
+            
 
 
 
